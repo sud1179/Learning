@@ -1,6 +1,7 @@
 package RandomQues;
 
 import java.util.Arrays;
+// Print 1 to 100 without using any loop ussing Arrays.fill function
 
 public class Print1To100WithoutUsingLoop {
 
