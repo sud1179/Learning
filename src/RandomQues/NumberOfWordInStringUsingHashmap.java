@@ -7,13 +7,19 @@ import java.util.HashMap;
 public class NumberOfWordInStringUsingHashmap {
 
 	public static void main(String[] args) {
-		String s="my name is sudeep kumar yadav";
+		String s="my name is is sudeep kumar sudeep";
 		HashMap<String,Integer> hm= new HashMap<String,Integer>();
 		String[] str=s.split(" ");
-		for(String st:str) {
-			hm.put(st, 1);
+		for(int i=0;i<str.length;i++) {
+			if(hm.containsKey(str[i])) {
+				int count =hm.get(str[i]);
+				hm.put(str[i], ++count);
+			}else {
+				hm.put(str[i], 1);
+				
+			}
 		}
-		System.out.println("Number of words in the string:"+hm.size());
+		System.out.println("Number of words in the string:"+hm);
 		
 
 	}
