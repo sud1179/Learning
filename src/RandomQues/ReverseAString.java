@@ -9,7 +9,7 @@ public class ReverseAString {
 	public static void main(String[] args) {
 		Scanner scan=new Scanner(System.in);
 		System.out.println("Enter the string:");
-		String s=scan.next();
+		String s=scan.nextLine();
 		String rev="";
 		char[] ch=s.toCharArray();
 		for(int i=s.length()-1;i>=0;i--) {
